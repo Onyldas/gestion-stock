@@ -1,0 +1,10 @@
+<form>
+  <h2>Sign up</h2>
+  <form (ngSubmit)="register()" [formGroup]="productForm">
+    <div><label>Name</label><input formControlName="name"></div>
+    <div><label>Fournisseur</label><input type="text" formControlName="fournisseur"></div>
+    <div><label>Age</label><input type="text" formControlName="age"></div>
+    <div><label>Description</label><input type="text" formControlName="description"></div>
+    <button type="submit">Register</button>
+  </form>
+</form>
